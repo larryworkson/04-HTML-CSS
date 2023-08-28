@@ -1,0 +1,29 @@
+@charset "UTF-8";
+body {
+    background-color: rgb(250, 229, 135);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;/*FONT SIZE NO BODY É O TAMANHO BASE PARA H1, H2, H3 - CADA UM VAI SEGUIR A BASE MAS DE ACORDO COM A HIERARQUIA*/
+    padding: 30px;
+}
+h1 {
+    color: rgb(136, 67, 35);
+    background-color: lightblue;
+}
+h2 {
+    color: rgb(80, 153, 51);
+}
+p {
+    text-align: justify;
+}
+a {
+    background-color: aquamarine;
+    color:rgb(24, 58, 122);
+    padding: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+a:hover {
+    background-color: rgb(84, 192, 156);
+    color:rgb(24, 58, 122);
+    transition-duration: 0.5s;
+}

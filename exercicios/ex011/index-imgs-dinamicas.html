@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+</head>
+<body>
+    <h1>Imagem dinâmicas</h1>
+    <p>Tente abrir este arquivo em vários dispositivos ou diminua o tamanho do seu navegador</p>
+    <picture><!--A ordem precisa ser respeitada-->
+        <source media="(max-width: 750px)" srcset="imgs/peq-300x300.jpg" type="image/jpg"> <!--se a tela for menor que 750px, usar img menor-->
+        <source media="(max-width: 1050px)" srcset="imgs/med-700x700.jpg" type="image/jpg"> 
+        <img src="imgs/gra-1000x1000.jpg" alt="imagem flexivel">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos reproduzir um áudio</p>
+    <audio preload="metadata" controls loop> <!--metadata só carrega as informações do arquivo, mas não o arquivo em si.-->
+        <!--loop toca o áudio repetitivo-->
+        <source src="midia/dreams.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>

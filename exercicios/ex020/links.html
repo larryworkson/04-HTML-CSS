@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font: Normal 1em 'Arial',  'sans-serif';
+          
+        }
+        a {
+            color:rgb(83, 113, 234);
+            text-decoration: none;
+        }
+        a:hover {
+            color:blue;
+            text-decoration: underline;
+            transition-duration: 1s;
+        }
+        a:visited {
+            color: rgb(16, 0, 119);
+        }
+        a:active {
+            color:blueviolet;
+        }
+
+        a::after { /* PSEUDO ELEMENTO*/
+            content: '<';
+            color: grey;
+        }
+
+        a::before {
+            content: '>';
+            color: grey;
+
+        }
+        li > ul {
+            display: none;
+            font: normal 0.9em 'Arial';
+            padding: 0px 10px;
+            color:rgb(50, 32, 165)
+        }
+        a.sub {
+            color: rgb(108, 0, 0);
+        }
+        li:hover > ul {
+            display:block;
+            transition-duration: 1s;
+       }
+        
+    </style>
+</head>
+<body>
+  <h1>Personalizando links</h1>
+<ul>
+    <li><a href="https://gustavoguanabara.github.io" target="_blank">Respositório GitHub</a></li>
+    <li><a href="https://youtube.com/cursoemvideo" target="_blank">Canal do Youtube</a></li>
+    <li><a href="https://www.cursoemvideo.com" target="_blank">Site do Curso em vídeo</a>
+        <ul>
+            <li><a class="sub">Submenu 1</a></li>
+            <li><a class="sub">Submenu 2</a></li>
+            <li><a class="sub">Submenu 3</a></li>
+        </ul>
+    </li>
+</ul>
+
+    
+</body>
+</html>

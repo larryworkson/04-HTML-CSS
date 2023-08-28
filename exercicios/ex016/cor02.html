@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradientes</title>
+    <style>
+        * { /*configurações globais do CSS*/
+            height: 100px;
+        }
+        .radial {
+            width: 500px;
+            height: 500px;
+            background-image: radial-gradient(circle, #4167ba 20%, #A142B4, #793161, #DF103C , #f4dc00);
+        }
+        .linear {
+            width: 500px;
+            height: 500px;
+            background-image: linear-gradient(120deg, #4167ba, #A142B4, #793161, #DF103C, #f4dc00 50%);
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando gradientes</h1>
+    <h3>Degradê linear</h3>
+    <div class="linear"></div>
+    <h3>Degradê radial</h3>
+    <div class="radial"></div>
+</body>
+</html>
