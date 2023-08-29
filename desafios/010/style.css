@@ -87,12 +87,14 @@ a.menubtn {
     color: var(--cor0);
     text-decoration: none;
     font-weight: bold;
+    transition-duration: 0.3s;
 }
 a.menubtn:hover {
     background-color: var(--cor4);
     border-radius: 4px;
     transition-duration: 0.3s;
 }
+
 /* fim do menu */
 
 /* conteúdo */
