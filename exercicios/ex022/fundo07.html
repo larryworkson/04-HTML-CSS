@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralizar elementos verticalmente</title>
+    <style>
+/*         PASSO A PASSO
+        > Declarar a caixa maior como position: relative
+        > O conteudo intenro position: abstolute
+        > Adicionar o left e top em 50%
+        > Fazer a transformação dos eixos âncora com transform: translate(-50%, -50%)
+ */        #container {
+            position: relative; /* toda caixa no html é por padrão relative */
+            height: 600px;
+            padding: 10px;
+            background-color: purple;
+            background-image: url('imgs/target001.png');
+            background-size: 100% 100%;
+        }
+        #conteudo {
+            position: absolute;
+            left: 50%;  /* por padrão a âncora é left top */
+            top: 50%;
+            width: 600px;            
+            height: 200px;
+            background-color: yellow;
+            background-image: url('imgs/target001.png');
+            background-size: 100% 100%;
+            transform: translate(-50%, -50%); /* X e Y */
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
