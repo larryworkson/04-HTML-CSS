@@ -36,6 +36,9 @@ header a {
     color: #ffffff;
     font-weight: bold;
 }
+header a:hover {
+    text-decoration: underline;
+}
 
 /* FIM DO CABEÇALHO */
 
@@ -46,22 +49,49 @@ section {
 
 }
 
+.bg {
+    width: 50%;
+    color: #ffffff;
+    background-color: #00000082;
+    padding: 30px;
+}
 #sec2 {
     height: 100%;
     background-image: url("imagens/background001.jpg");
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
+    box-shadow: inset 3px 3px 20px #00000092;
 }
-.bg {
-    width: 50%;
-    color: #ffffff;
-    background-color: #00000055;
-    padding: 30px;
+
+#sec3 p, #sec6 p {
+    margin: 15px 0px;
+
 }
 
 #sec5 {
     height: 100%;
     background-image: url('imagens/background002.jpg');
-    
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 3px 3px 20px #00000092;
+
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: var(--fonte1);
+    font-size: 1em;
+    text-align: center;
+    padding: 10px;
+}
+footer a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+footer a:hover {
+    text-decoration: underline;
 }
