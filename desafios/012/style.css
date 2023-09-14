@@ -43,25 +43,16 @@ header a {
     color: #ffffff;
     font-weight: bold;
 }
-header a:hover {
-    text-decoration: underline;
-}
 
 /* FIM DO CABEÇALHO */
 
 section {
     font-family: var(--fonte3);
     font-size: 3.5vw;
-    padding: 50px;
+    padding: 5vh;
 
 }
 
-.bg {
-    width: 50%;
-    color: #ffffff;
-    background-color: #00000082;
-    padding: 30px;
-}
 #sec2 {
     height: 100%;
     background-image: url("imagens/background001.jpg");
@@ -71,19 +62,24 @@ section {
     box-shadow: inset 3px 3px 20px #00000092;
 }
 
-#sec3 p, #sec6 p {
-    margin: 15px 0px;
+#sec3 p, #sec5 p {
+    margin: 5vh 0px;
 
 }
 
-#sec5 {
+#sec4 {
     height: 100%;
     background-image: url('imagens/background002.jpg');
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
     box-shadow: inset 3px 3px 20px #00000092;
-
+}
+#sec4 p, #sec2 p {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #00000082;
+    padding: 30px;
 }
 
 footer {
@@ -99,6 +95,6 @@ footer a {
     color: #ffffff;
     font-weight: bold;
 }
-footer a:hover {
+footer a:hover, header a:hover {
     text-decoration: underline;
 }
