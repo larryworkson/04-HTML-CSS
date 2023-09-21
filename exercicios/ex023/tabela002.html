@@ -12,6 +12,19 @@
             width: 80%;
             border-collapse: collapse;
         }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightcyan;
+
+        }
+        tbody > tr:nth-child(2n) { /* aplicando efeito zebrado na tabela */
+            background-color: rgb(199, 211, 223);
+        }
+        tbody > tr:nth-child(odd) {
+            background-color: bisque;
+        }
         td, th {
             border: solid 1px rgb(101, 101, 101);
             padding: 10px;
@@ -23,6 +36,7 @@
         .num {
             text-align: right;
         }
+        
 
     </style>
 </head>
@@ -38,10 +52,11 @@
             TR, TD, TH -->
     
     <table>
+        <caption>TABELA DAS UNIDADES FEDERATIVAS</caption> <!-- legenda da tabela -->
         <thead>
             <tr>
-                <th>ESTADO</th>
-                <th>POPULAÇÃO</th>
+                <th scope="col">ESTADO</th> <!-- scope='col' significa que aqui é o título da coluna -->
+                <th scope="col" style="width: 20%;">POPULAÇÃO</th>
             </tr>
         </thead>
         <tbody>
@@ -57,10 +72,14 @@
                 <td>Rio de Janeiro</td>
                 <td class="num">11 993 039</td>
             </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num"> 8 009 290</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num"><strong>0000</strong></td>
             </tr>
         </tfoot>
