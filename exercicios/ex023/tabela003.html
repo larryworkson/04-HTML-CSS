@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 40%;
+        }
+        td {
+            border: solid 1px brown;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td> <!-- esta celula vai ocupar 2 colunas -->
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td rowspan="2">G</td> <!-- ocupa 2 linhas -->
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>L</td>
+            <td>M</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
