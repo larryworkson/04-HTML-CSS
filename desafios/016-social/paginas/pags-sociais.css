@@ -1,8 +1,12 @@
-
+@charset "UTF-8";
 * {
     padding: 0px;
     margin: 0px;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+::-webkit-scrollbar { /* esconde a barra de rolagem da página */
+    width: 0px;
+    height: 0px;
 }
 section {
     width: 100%;
