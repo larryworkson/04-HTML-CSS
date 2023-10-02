@@ -1,0 +1,24 @@
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+section {
+    width: 100%;
+    
+
+}
+section>a {
+    background-color: rgb(144, 21, 21);
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+
+}
+section>a:hover {
+    background-color: rgb(218, 55, 55);
+    text-decoration: underline;
+}
