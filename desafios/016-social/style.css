@@ -54,3 +54,26 @@ a > img:hover {
     box-shadow: 5px 5px 5px #000000c5;
     transition-duration: 0.2s;
 }
+
+@media (max-width: 480px) {
+    ul {
+        width: 99%;
+        position: relative;
+        top: 10px;
+        right: auto;
+    }
+    li {
+        display: inline-block;
+    }
+    section#celular {
+        height: 607px; 
+        width: 291px;
+    
+    }
+    iframe {
+        width: 250px;
+        height: 456px;
+        
+    }
+
+}
