@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            display: inline;
+            margin: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <form autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sex" id="masc" value="M" > <!-- ao definir value, podemos usar essas infos no JS -->
+            <label for="masc">Masculino</label>
+
+            <input type="radio" name="sex" id="fem" value="F">
+            <label for="fem">Feminino</label>
+        </fieldset>
+        <fieldset> <!-- agrupa os campos -->
+            <legend>Dados pessoais</legend>            
+            <input type="checkbox" name="esfut" id="iesfut">
+            <label for="iesfut">Futebol</label>
+            
+            <input type="checkbox" name="esbas" id="iesbas">
+            <label for="iesbas">Basquete</label>
+            
+            <input type="checkbox" name="esnat" id="iesnat">
+            <label for="iesnat">Natação</label>
+
+            
+        </fieldset>
+        <button onclick="enviar()">Enviar</button>
+        
+    </form>
+    <div id="res"></div>
+    <script>
+        
+        function enviar() {
+            let res = document.getElementById('res')
+            let sex = document.getElementsByName('sex')
+            for (let i of sex){
+                res.innerText += i.value
+                
+            }
+            
+        }
+        
+
+    </script>
+</body>
+</html>
