@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            display: inline;
+            margin: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <form autocomplete="on">
+        <label for="iest">Estado</label>
+        <select name="estado" id="iest">
+            <optgroup label="SUDESTE">
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP" selected>São Paulo</option><!--  SELECTED é a opção pré-definida -->
+            </optgroup>
+
+            <optgroup label="SUL">
+                <option value="SC">Santa Catarina</option>
+                <option value="RS">Rio Grande do Sul</option>
+            </optgroup>
+        </select>
+
+        <label for="iprof">Professor</label>
+        <input type="text" name="prof" id="iprof" list="listprof"> <!-- opção de lista ou texto personalizado -->
+            <datalist id="listprof">
+                <option value="ADM">Administrador</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="MED">Médico</option>
+            </datalist>
+        
+            <p>
+                <label for="imsg">Mensagem</label><br> <!-- textarea precisa SER usado method POST -->
+                <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Digite aqui"></textarea>
+
+            </p>
+
+        
+        <button onclick="enviar()">Enviar</button>
+        
+    </form>
+    <script>
+        
+        function enviar() {
+            let msg = document.getElementById('imsg').value
+            let est = document.getElementsByName('estado')
+            window.alert(msg)
+            for (let i of est){                
+                window.alert(i.value)
+            }
+            
+        }
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            display: inline;
+            margin: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <form autocomplete="on">
+        <label for="icor">Cor:</label>
+        <input type="color" name="cor" id="icor" value="$48a4a2">
+        <label for="inivek">Satisfação</label>
+        <input type="range" name="nivel" id="inivel" min="1" max="5" value="2">
+        <label for="foto">Foto</label>
+        <input type="file" name="foto" id="ifoto"><!--  quando enviar imagens precisa ser pelo method POST -->
+        
+        <button onclick="enviar()">Enviar</button>
+        
+    </form>
+    <h1 id="res"></h1>
+    <script>
+        
+        function enviar() {
+            let cor = document.getElementById('icor').value
+            let range = document.getElementById('inivel').value
+            let res = document.querySelector('div#res').value
+            window.alert(cor)
+            res.innerText = 'OLA'
+            //window.alert(range)
+        }
+        
+
+    </script>
+</body>
+</html>
