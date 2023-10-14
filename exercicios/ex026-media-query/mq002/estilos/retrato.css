@@ -1,2 +1,8 @@
 @charset "UTF-8";
 /* configurações aparelho em pé */
+
+body {
+    background-image: url('../imgs/cev-portrait.jpg');
+    background-position: center bottom;
+    
+}
