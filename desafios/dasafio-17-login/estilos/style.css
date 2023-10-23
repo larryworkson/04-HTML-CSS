@@ -8,21 +8,30 @@
 }
 
 body, html {
-    background-color: cornflowerblue;
+    background-color: #fff7eb;
     height: 100vh;
     width: 100vw;
 }
 main {
+    position: relative;
     width: 100vw;
     height: 100vh;
 }
 
 section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
     width: 80%;
-    margin: 30px auto;
+    height: 500px;
+    margin: 0px auto;
     border-radius: 20px;
     background-color: rgb(255, 255, 255);
     box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.306);
+    transition: width 0.1s, height 0.1s;
+    transition-timing-function: ease;
 }
 div#img {
     width: 100%;
@@ -33,7 +42,7 @@ div#img {
     background-repeat: no-repeat;
     transition-duration: 0.2s;
     background-size: cover;
-    border-radius: 20px 20px 0px 0px;
+    
 
 }
 
@@ -71,16 +80,16 @@ p.in > img {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-100%, -50%);
+    transform: translate(-70%, -50%);
     width: 20px;
 }
 
 div#formulario input {
     background-color: rgb(255, 255, 255);
-    width: 70%;
+    width: 80%;
     padding: 5px;
-    margin: 5px;
-    border: none; /* 1px solid rgb(0, 0, 143); */
+    margin: 5px 5px 5px 10px;
+    border: none;
     border-radius: 5px;
 
     
@@ -95,17 +104,30 @@ div#formulario button {
     border: none;
     height: 40px;
     cursor: pointer;
+    font-weight: bold;
 
 
 }
 
 button#entrar {
-    background-color: aquamarine;
+    background-color: #0179B9;;
     transition-duration: 0.2s;
+    color: #ffffff;
 }
 
 
 button#entrar:hover {
-    background-color: rgb(53, 229, 170);
+    background-color: #004e78;
+    transition-duration: 0.2s;
+}
+
+button#esqueci {
+    background-color: #ffffff00;
+    color: #03550E;
+    transition-duration: 0.2s;
+}
+
+button#esqueci:hover {
+    background-color: #03550e3a;
     transition-duration: 0.2s;
 }
