@@ -4,6 +4,17 @@
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box; /* nesta config o tamanho total do elemento inclui o conteúdo, o padding e a borda, mas não a margem. */
+}
+
+body, html {
+    background-color: cornflowerblue;
+    height: 100vh;
+    width: 100vw;
+}
+main {
+    width: 100vw;
+    height: 100vh;
 }
 
 section#login {
@@ -16,15 +27,18 @@ section#login {
 div#img {
     width: 100%;
     height: 200px;
+    display: block;
     background-image: url('..//img/bg-pattern.jpg');
     background-position: center center;
+    background-repeat: no-repeat;
     transition-duration: 0.2s;
-    background-size: contain;
+    background-size: cover;
     border-radius: 20px 20px 0px 0px;
 
 }
 
 div#formulario {
+    display: block;
     width: 100%;
     text-align: center;
     padding: 5px 5px 25px 5px;
@@ -35,30 +49,40 @@ div#formulario h1 {
     margin: 10px;
     
 }
-div#formulario p {
+p#txt {
     width: 80%;
-    margin: 5px auto;
+    margin: 5px auto 15px auto;
     font-size: 0.8em;
 }
-p.in {
+div.campos {
+    background-color: rgb(238, 238, 255);
     width: 80%;
-    background-color: blue;
-    color: #ffffff;
+    margin: 5px auto 5px auto;
     border-radius: 5px;
 
 }
-span.icone {
-    
+p.in {
+    position: relative;
+    color: #ffffff;
+    display: inline;
+}
+
+p.in > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -50%);
+    width: 20px;
 }
 
 div#formulario input {
-    background-color: rgba(207, 207, 207, 0);
+    background-color: rgb(255, 255, 255);
     width: 70%;
     padding: 5px;
     margin: 5px;
-    color: white;
-    border: 1px solid rgb(0, 0, 143);
+    border: none; /* 1px solid rgb(0, 0, 143); */
     border-radius: 5px;
+
     
 }
 
@@ -67,6 +91,21 @@ div#formulario button {
     width: 80%;
     margin: 5px auto;
     padding: 5px;
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+    cursor: pointer;
 
 
+}
+
+button#entrar {
+    background-color: aquamarine;
+    transition-duration: 0.2s;
+}
+
+
+button#entrar:hover {
+    background-color: rgb(53, 229, 170);
+    transition-duration: 0.2s;
 }
