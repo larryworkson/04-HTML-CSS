@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Grid Layout</title>
+    <style>
+        .grid-bloco {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
+            grid-gap: 10px;
+        }
+        .item {
+
+            background-color: rgb(218, 218, 218);
+            padding: 30px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <main class="grid-bloco">
+        <div class="item">Texto 1</div>
+        <div class="item">Texto 2</div>
+    </main>
+</body>
+</html>
