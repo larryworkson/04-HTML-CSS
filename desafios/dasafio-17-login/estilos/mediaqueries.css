@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* telas maiores */
+/* configuração de telas maiores */
 
 /* tablet */
 @media screen and (min-width: 600px) and (max-width: 992px){
